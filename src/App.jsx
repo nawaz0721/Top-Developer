@@ -356,9 +356,9 @@ function App() {
           githubUrl={data.githubUrl}
         />
       ))}
+      <Pagination />
     </>
   );
-  <Pagination />;
 }
 
 export default App;

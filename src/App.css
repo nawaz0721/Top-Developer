@@ -289,3 +289,55 @@ input[type="text"]:focus {
   justify-content: space-evenly;
   align-items: center;
 }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.page-item {
+  margin: 0 0.25rem;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #007bff;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.page-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-item.active .page-link:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.pagination.justify-content-end {
+  justify-content: flex-end;
+}
